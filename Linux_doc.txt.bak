@@ -1,0 +1,498 @@
+LINUX/UNIX:
+-----------
+LINUX/UNIX is an operating sysytem by using OS users or applications can communicate with
+hardware components.
+Features of LINUX/UNIX os:
+--------------------------
+1.LINUX/UNIX is FOSS (Freeware and Open Sourse software)
+2.Linux is multi OS
+3.It is user friendly.It provides both GUI and CUI.
+
+Flavors of LINUX:
+-----------------
+1.Ubuntu
+2.Red hat Linux
+3.cent os
+4.Fedora
+5.slaclware
+6.mint
+7.kali
+e.t.c
+
+components of Linux OS:
+----------------------
+1.shell
+2.kernel
+
+1.shell:
+-------
+1.It is outer layer of LINU OS
+2.It reads our command(user enterd ) and verfie either command coreponding to valid command or not
+3.Command hand over to kernel
+
+2.Kernel:
+--------
+1.It is core comppnent of LINUX OS
+2.It is responsible execute our command and it is interact with hardware components.
+
+
+To open terminal ctl+alt+t
+
+To close terminal ctl+d
+
+commands:
+--------
+1.pwd:
+------
+present working directory
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+
+2.ls:
+-----
+list all files and folders in pwd
+eg:
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              abcd.txt  dir4  dirD       f2.txt  file1.txt  MOHAN     Python_sessions  xyz_06_01_2022.log  xyz_.log
+ABC_2022.04.26-07.56.47  abc.txt   DirA  Documents  f3.txt  file9.txt  Music     Templates        xyz123
+ABC_2022.04.26-07.57.38  Desktop   dirB  Downloads  f4.txt  gavvala    Pictures  Videos           XYZ_123
+ABC_2022.04.26-07.57.59  dir10     dirC  f1.txt     f5.txt  JAVA2      Public    xyz_             xyz_abc.py
+
+3.mkdir:
+----------
+to create a new directory
+eg:
+jagang@jagang-VirtualBox:~$ mkdir ABCD_123
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABCD_123  dir10  dirC       f1.txt  f5.txt     JAVA2     Public           xyz_                xyz_abc.py
+ABC_2022.04.26-07.56.47  abcd.txt  dir4   dirD       f2.txt  file1.txt  MOHAN     Python_sessions  xyz_06_01_2022.log  xyz_.log
+ABC_2022.04.26-07.57.38  abc.txt   DirA   Documents  f3.txt  file9.txt  Music     Templates        xyz123
+ABC_2022.04.26-07.57.59  Desktop   dirB   Downloads  f4.txt  gavvala    Pictures  Videos           XYZ_123
+jagang@jagang-VirtualBox:~$ ^C
+
+4.cd
+-----
+change directory
+eg:
+jagang@jagang-VirtualBox:~$ cd DirA
+jagang@jagang-VirtualBox:~/DirA$ ls
+
+5.touch
+---------
+To create a file
+eg:
+jagang@jagang-VirtualBox:~/DirA$ touch test.py
+jagang@jagang-VirtualBox:~/DirA$ ls
+test.py
+
+6.rm:
+-----
+to remove file
+eg:
+jagang@jagang-VirtualBox:~/DirA$ rm test.py
+jagang@jagang-VirtualBox:~/DirA$ ls
+jagang@jagang-VirtualBox:~/DirA$ 
+
+7.rmdir:
+------
+rome directory
+eg:
+jagang@jagang-VirtualBox:~/DirA$ ls
+jagang@jagang-VirtualBox:~/DirA$ mkdir ABCD
+jagang@jagang-VirtualBox:~/DirA$ ls
+ABCD
+jagang@jagang-VirtualBox:~/DirA$ rmdir ABCD
+jagang@jagang-VirtualBox:~/DirA$ ls
+jagang@jagang-VirtualBox:~/DirA$ 
+
+8.date:
+------
+which gives current system date
+eg:
+jagang@jagang-VirtualBox:~/DirA$ ls
+jagang@jagang-VirtualBox:~/DirA$ mkdir ABCD
+jagang@jagang-VirtualBox:~/DirA$ ls
+ABCD
+jagang@jagang-VirtualBox:~/DirA$ rmdir ABCD
+jagang@jagang-VirtualBox:~/DirA$ ls
+jagang@jagang-VirtualBox:~/DirA$ 
+
+9.cal:
+-------
+jagang@jagang-VirtualBox:~/DirA$ cal
+   November 2022      
+Su Mo Tu We Th Fr Sa  
+       1  2  3  4  5  
+ 6  7  8  9 10 11 12  
+13 14 15 16 17 18 19  
+20 21 22 23 24 25 26  
+27 28 29 30  
+
+   September 2018     
+Su Mo Tu We Th Fr Sa  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+30  
+
+eg:
+agang@jagang-VirtualBox:~/DirA$ cal 2022
+                            2022
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5         1  2  3  4  5  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   6  7  8  9 10 11 12  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  13 14 15 16 17 18 19  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  20 21 22 23 24 25 26  
+23 24 25 26 27 28 29  27 28                 27 28 29 30 31        
+30 31                                                             
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2   1  2  3  4  5  6  7            1  2  3  4  
+ 3  4  5  6  7  8  9   8  9 10 11 12 13 14   5  6  7  8  9 10 11  
+10 11 12 13 14 15 16  15 16 17 18 19 20 21  12 13 14 15 16 17 18  
+17 18 19 20 21 22 23  22 23 24 25 26 27 28  19 20 21 22 23 24 25  
+24 25 26 27 28 29 30  29 30 31              26 27 28 29 30        
+                                                                  
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2      1  2  3  4  5  6               1  2  3  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   4  5  6  7  8  9 10  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  11 12 13 14 15 16 17  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  18 19 20 21 22 23 24  
+24 25 26 27 28 29 30  28 29 30 31           25 26 27 28 29 30     
+31                                                                
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5               1  2  3  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   4  5  6  7  8  9 10  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  11 12 13 14 15 16 17  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  18 19 20 21 22 23 24  
+23 24 25 26 27 28 29  27 28 29 30           25 26 27 28 29 30 31  
+30 31                                                             
+jagang@jagang-VirtualBox:~/DirA$ 
+eg:
+agang@jagang-VirtualBox:~/DirA$ 
+jagang@jagang-VirtualBox:~/DirA$ cal 1
+                             1
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5         1  2  3  4  5  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   6  7  8  9 10 11 12  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  13 14 15 16 17 18 19  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  20 21 22 23 24 25 26  
+23 24 25 26 27 28 29  27 28                 27 28 29 30 31        
+30 31                                                             
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2   1  2  3  4  5  6  7            1  2  3  4  
+ 3  4  5  6  7  8  9   8  9 10 11 12 13 14   5  6  7  8  9 10 11  
+10 11 12 13 14 15 16  15 16 17 18 19 20 21  12 13 14 15 16 17 18  
+17 18 19 20 21 22 23  22 23 24 25 26 27 28  19 20 21 22 23 24 25  
+24 25 26 27 28 29 30  29 30 31              26 27 28 29 30        
+                                                                  
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2      1  2  3  4  5  6               1  2  3  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   4  5  6  7  8  9 10  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  11 12 13 14 15 16 17  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  18 19 20 21 22 23 24  
+24 25 26 27 28 29 30  28 29 30 31           25 26 27 28 29 30     
+31                                                                
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5               1  2  3  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   4  5  6  7  8  9 10  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  11 12 13 14 15 16 17  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  18 19 20 21 22 23 24  
+23 24 25 26 27 28 29  27 28 29 30           25 26 27 28 29 30 31  
+30 31                                                             
+jagang@jagang-VirtualBox:~/DirA$ cal 9999
+                            9999
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2      1  2  3  4  5  6      1  2  3  4  5  6  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   7  8  9 10 11 12 13  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  14 15 16 17 18 19 20  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  21 22 23 24 25 26 27  
+24 25 26 27 28 29 30  28                    28 29 30 31           
+31                                                                
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+             1  2  3                     1         1  2  3  4  5  
+ 4  5  6  7  8  9 10   2  3  4  5  6  7  8   6  7  8  9 10 11 12  
+11 12 13 14 15 16 17   9 10 11 12 13 14 15  13 14 15 16 17 18 19  
+18 19 20 21 22 23 24  16 17 18 19 20 21 22  20 21 22 23 24 25 26  
+25 26 27 28 29 30     23 24 25 26 27 28 29  27 28 29 30           
+                      30 31                                       
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+             1  2  3   1  2  3  4  5  6  7            1  2  3  4  
+ 4  5  6  7  8  9 10   8  9 10 11 12 13 14   5  6  7  8  9 10 11  
+11 12 13 14 15 16 17  15 16 17 18 19 20 21  12 13 14 15 16 17 18  
+18 19 20 21 22 23 24  22 23 24 25 26 27 28  19 20 21 22 23 24 25  
+25 26 27 28 29 30 31  29 30 31              26 27 28 29 30        
+                                                                  
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2      1  2  3  4  5  6            1  2  3  4  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   5  6  7  8  9 10 11  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  12 13 14 15 16 17 18  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  19 20 21 22 23 24 25  
+24 25 26 27 28 29 30  28 29 30              26 27 28 29 30 31     
+31                                                                
+jagang@jagang-VirtualBox:~/DirA$ cal 10000
+cal: year `10000' not in range 1..9999
+
+12.clear;
+----------
+To clear the terminal (ctl+L)
+
+
+jagang@jagang-VirtualBox:~/DirA$ clear
+jagang@jagang-VirtualBox:~/DirA$ 
+
+13.exit:
+---------
+To logout from curent session
+
+jagang@jagang-VirtualBox:~/DirA$ exit
+
+14.hello
+---------
+eg:
+[jjknkjnj@www.masswerk.at:2]$ hello                                             
+ JS/UIX 0.49 @ www.masswerk.at at 18:53:45 local time                           
+ by mass:werk - media environments <http://www.masswerk.at>                     
+ Type "help" for available commands.                                            
+[jjknkjnj@www.masswerk.at:2]$      
+
+Types of file in Linux:
+------------------------
+We know in python everything treated as object
+in linux everything treated as file
+
+1.Normal file
+2.Directory file
+3.Device file
+
+1.Normal file:
+-------------
+eg: text file, audio,video,images files
+2.Directory file:
+-----------------
+This rpresents directory
+
+3.device file:
+---------------
+Eg: pendrive,printer, terminal e.t.c
+
+
+eg:
+terminal 0:
+jagang@jagang-VirtualBox:~$ tty
+/dev/pts/0
+jagang@jagang-VirtualBox:~$ cat > /dev/pts/1
+
+Hello
+ Are you
+
+terminal 1:
+/dev/pts/1
+jagang@jagang-VirtualBox:~$ 
+
+
+Hello
+ Are you
+
+
+How check file type:
+---------------------
+
+ls -l
+-----
+
+eg:
+agang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABCD_123  dir10  dirC       f1.txt  f5.txt     JAVA2     Public           xyz_                xyz_abc.py
+ABC_2022.04.26-07.56.47  abcd.txt  dir4   dirD       f2.txt  file1.txt  MOHAN     Python_sessions  xyz_06_01_2022.log  xyz_.log
+ABC_2022.04.26-07.57.38  abc.txt   DirA   Documents  f3.txt  file9.txt  Music     Templates        xyz123
+ABC_2022.04.26-07.57.59  Desktop   dirB   Downloads  f4.txt  gavvala    Pictures  Videos           XYZ_123
+jagang@jagang-VirtualBox:~$ ls -l
+total 108
+-rw-rw-r-- 1 jagang jagang    0 Apr 26  2022 abc_123.txt
+-rw-rw-r-- 1 jagang jagang    0 Apr 26  2022 ABC_2022.04.26-07.56.47
+-rw-rw-r-- 1 jagang jagang    0 Apr 26  2022 ABC_2022.04.26-07.57.38
+-rw-rw-r-- 1 jagang jagang    0 Apr 26  2022 ABC_2022.04.26-07.57.59
+drwxrwxr-x 2 jagang jagang 4096 Nov 26 18:40 ABCD_123
+-rw-rw-r-- 1 jagang jagang    0 Jun 22 07:54 abcd.txt
+-rw-rw-r-- 1 jagang jagang    0 Apr 18  2022 abc.txt
+drwxr-xr-x 3 jagang jagang 4096 Apr 27  2022 Desktop
+drwxrwxr-x 3 jagang jagang 4096 Jun 29 07:30 dir10
+drwxrwxr-x 3 jagang jagang 4096 Apr 26  2022 dir4
+drwxrwxr-x 2 jagang jagang 4096 Nov 26 18:45 DirA
+drwxrwxr-x 2 jagang jagang 4096 Jun 29 07:27 dirB
+drwxrwxr-x 2 jagang jagang 4096 Jun 29 07:27 dirC
+drwxrwxr-x 2 jagang jagang 4096 Jun 29 07:27 dirD
+drwxr-xr-x 2 jagang jagang 4096 Jun 23 07:41 Documents
+drwxr-xr-x 2 jagang jagang 4096 Apr  8  2022 Downloads
+-rw-rw-r-- 1 jagang jagang   15 Apr 26  2022 f1.txt
+-rw-rw-r-- 1 jagang jagang   49 Apr 27  2022 f2.txt
+-rw-rw-r-- 1 jagang jagang   13 Apr 27  2022 f3.txt
+-rw-rw-r-- 1 jagang jagang   13 Apr 27  2022 f4.txt
+-rw-rw-r-- 1 jagang jagang  302 Apr 27  2022 f5.txt
+-rw-rw-r-- 1 jagang jagang   29 Jun 29 08:09 file1.txt
+-rw-rw-r-- 1 jagang jagang   29 Jun 29 08:15 file9.txt
+drwxrwxr-x 3 jagang jagang 4096 Jun 24 07:58 gavvala
+lrwxrwxrwx 1 jagang jagang    4 Apr 28  2022 JAVA2 -> JAVA
+drwxrwxr-x 2 jagang jagang 4096 Apr 23  2022 MOHAN
+drwxr-xr-x 2 jagang jagang 4096 Apr  8  2022 Music
+drwxr-xr-x 2 jagang jagang 4096 Apr  8  2022 Pictures
+drwxr-xr-x 2 jagang jagang 4096 Apr  8  2022 Public
+drwxrwxr-x 2 jagang jagang 4096 Oct 28 07:31 Python_sessions
+drwxr-xr-x 2 jagang jagang 4096 Apr  8  2022 Templates
+drwxr-xr-x 2 jagang jagang 4096 Apr  8  2022 Videos
+-rw-rw-r-- 1 jagang jagang    0 Apr 26  2022 xyz_
+-rw-rw-r-- 1 jagang jagang    0 Apr 26  2022 xyz_06_01_2022.log
+drwxrwxr-x 2 jagang jagang 4096 Jun 22 08:02 xyz123
+drwxrwxr-x 2 jagang jagang 4096 Apr 22  2022 XYZ_123
+-rw-rw-r-- 1 jagang jagang    0 Jun 29 08:10 xyz_abc.py
+-rw-rw-r-- 1 jagang jagang    0 Apr 26  2022 xyz_.log
+jagang@jagang-VirtualBox:~$ 
+
+
+The first charcter represents type of file
+d -------- dirctory file
+- ---------- normal file 
+l --------   link file 
+c --------   charcter file
+b ---------- blank file
+s ------------ socket file
+
+file navigation commands:
+-------------------------
+linux file system follows tree structer
+
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+
+/ ---------> root
+ to move from one directory to another directory by using Navigation commands
+ 
+ls ------> it gives all files folder in pwd
+ls-a --------> which display all files and folders in pwd including hidden files also
+Eg:
+agang@jagang-VirtualBox:~$ ls -a 
+.                        abcd.txt       Desktop    Downloads  file9.txt  Pictures                   .vboxclient-clipboard.pid    XYZ_123
+..                       .abc.txt       dir10      f1.txt     gavvala    .profile                   .vboxclient-display.pid      xyz_abc.py
+.ABC123                  abc.txt        dir4       .f2.txt    .gnupg     Public                     .vboxclient-draganddrop.pid  xyz_.log
+abc_123.txt              .bash_history  DirA       f2.txt     JAVA2      Python_sessions            .vboxclient-seamless.pid
+ABC_2022.04.26-07.56.47  .bash_logout   dirB       f3.txt     .local     snap                       Videos
+ABC_2022.04.26-07.57.38  .bashrc        dirC       f4.txt     MOHAN      .ssh                       xyz_
+ABC_2022.04.26-07.57.59  .cache         dirD       f5.txt     .mozilla   .sudo_as_admin_successful  xyz_06_01_2022.log
+ABCD_123                 .config        Documents  file1.txt  Music      Templates                  xyz123
+jagang@jagang-VirtualBox:~$ 
+every directory contains two files 
+.      -------------->It represent pwd                                   
+..   ------------------->It represents Parent directory
+
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ cd ..
+jagang@jagang-VirtualBox:/home$ pwd
+/home
+jagang@jagang-VirtualBox:/home$ cd ..
+jagang@jagang-VirtualBox:/$ pwd
+/
+jagang@jagang-VirtualBox:/$ ls
+bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  swapfile  tmp  var
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   sys       usr  VBox.log
+jagang@jagang-VirtualBox:/$ 
+
+
+1.cd 
+------
+change directory
+eg:
+jagang@jagang-VirtualBox:~$ cd dir10
+jagang@jagang-VirtualBox:~/dir10$ 
+
+2.cd ..:
+-----------
+eg:
+/home/jagang/dir10
+jagang@jagang-VirtualBox:~/dir10$ cd ..
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+
+3.cd .
+------
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ cd .
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+4. cd
+------
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ cd Downloads
+jagang@jagang-VirtualBox:~/Downloads$ pwd
+/home/jagang/Downloads
+jagang@jagang-VirtualBox:~/Downloads$ ls
+jagang@jagang-VirtualBox:~/Downloads$ cd 
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ 
+
+4.cd ~
+--------
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABCD_123  dir10  dirC       f1.txt  f5.txt     JAVA2     Public           Videos              XYZ_123
+ABC_2022.04.26-07.56.47  abcd.txt  dir4   dirD       f2.txt  file1.txt  MOHAN     Python_sessions  xyz_                xyz_abc.py
+ABC_2022.04.26-07.57.38  abc.txt   DirA   Documents  f3.txt  file9.txt  Music     snap             xyz_06_01_2022.log  xyz_.log
+ABC_2022.04.26-07.57.59  Desktop   dirB   Downloads  f4.txt  gavvala    Pictures  Templates        xyz123
+jagang@jagang-VirtualBox:~$ cd Downloads
+jagang@jagang-VirtualBox:~/Downloads$ ls
+jagang@jagang-VirtualBox:~/Downloads$ cd ~
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+5.cd -
+-------
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABCD_123  dir10  dirC       f1.txt  f5.txt     JAVA2     Public           Videos              XYZ_123
+ABC_2022.04.26-07.56.47  abcd.txt  dir4   dirD       f2.txt  file1.txt  MOHAN     Python_sessions  xyz_                xyz_abc.py
+ABC_2022.04.26-07.57.38  abc.txt   DirA   Documents  f3.txt  file9.txt  Music     snap             xyz_06_01_2022.log  xyz_.log
+ABC_2022.04.26-07.57.59  Desktop   dirB   Downloads  f4.txt  gavvala    Pictures  Templates        xyz123
+jagang@jagang-VirtualBox:~$ cd Pictures
+jagang@jagang-VirtualBox:~/Pictures$ ls
+jagang@jagang-VirtualBox:~/Pictures$ cd
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ cd -
+/home/jagang/Pictures
+jagang@jagang-VirtualBox:~/Pictures$ 
+
+

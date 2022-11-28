@@ -1,0 +1,187 @@
+Git 
+------
+Git version control system
+Local repository
+
+Git HUB:
+---------
+Remote repository
+
+
+eg1:
+----
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material
+$ pwd
+/f/Python_sessin_2_git/python_session2_material
+
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material
+$ ls
+ GIt1.png                     abc.py                python_doc.txt
+ Git_doc.txt                  abc.py.bak            python_doc.txt.bak
+ Linux_doc.txt                calc.py               test.py
+ Linux_doc.txt.bak            calc.py.bak           test.py.bak
+'New Text Document (2).txt'   caluclations.py       test2.py
+'New Text Document (3).txt'   caluclations.py.bak   test2.py.bak
+'New Text Document (4).txt'   cde.py                xyz.py
+'New Text Document (5).txt'   cde.py.bak            xyz.py.bak
+'New Text Document.txt'       pqr.py
+ __pycache__/   
+ 
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material
+$ git init
+Initialized empty Git repository in F:/Python_sessin_2_git/python_session2_material/.git/
+
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GIt1.png
+        Git_doc.txt
+        Linux_doc.txt
+        Linux_doc.txt.bak
+        New Text Document (2).txt
+        New Text Document (3).txt
+        New Text Document (4).txt
+        New Text Document (5).txt
+        New Text Document.txt
+        __pycache__/
+        abc.py
+        abc.py.bak
+        calc.py
+        calc.py.bak
+        caluclations.py
+        caluclations.py.bak
+        cde.py
+        cde.py.bak
+        pqr.py
+        pqr.py.bak
+        python_doc.txt
+        python_doc.txt.bak
+        test.py
+        test.py.bak
+        test2.py
+        test2.py.bak
+        xyz.py
+        xyz.py.bak
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   GIt1.png
+        new file:   Git_doc.txt
+        new file:   Linux_doc.txt
+        new file:   Linux_doc.txt.bak
+        new file:   New Text Document (2).txt
+        new file:   New Text Document (3).txt
+        new file:   New Text Document (4).txt
+        new file:   New Text Document (5).txt
+        new file:   New Text Document.txt
+        new file:   __pycache__/calc.cpython-36.pyc
+        new file:   abc.py
+        new file:   abc.py.bak
+        new file:   calc.py
+        new file:   calc.py.bak
+        new file:   caluclations.py
+        new file:   caluclations.py.bak
+        new file:   cde.py
+        new file:   cde.py.bak
+        new file:   pqr.py
+        new file:   pqr.py.bak
+        new file:   python_doc.txt
+        new file:   python_doc.txt.bak
+        new file:   test.py
+        new file:   test.py.bak
+        new file:   test2.py
+        new file:   test2.py.bak
+        new file:   xyz.py
+        new file:   xyz.py.bak
+
+
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (master)
+$
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (master)
+$ git commit -m "version_1"
+[master (root-commit) 32a5957] version_1
+ 28 files changed, 17522 insertions(+)
+ create mode 100644 GIt1.png
+ create mode 100644 Git_doc.txt
+ create mode 100644 Linux_doc.txt
+ create mode 100644 Linux_doc.txt.bak
+ create mode 100644 New Text Document (2).txt
+ create mode 100644 New Text Document (3).txt
+ create mode 100644 New Text Document (4).txt
+ create mode 100644 New Text Document (5).txt
+ create mode 100644 New Text Document.txt
+ create mode 100644 __pycache__/calc.cpython-36.pyc
+ create mode 100644 abc.py
+ create mode 100644 abc.py.bak
+ create mode 100644 calc.py
+ create mode 100644 calc.py.bak
+ create mode 100644 caluclations.py
+ create mode 100644 caluclations.py.bak
+ create mode 100644 cde.py
+ create mode 100644 cde.py.bak
+ create mode 100644 pqr.py
+ create mode 100644 pqr.py.bak
+ create mode 100644 python_doc.txt
+ create mode 100644 python_doc.txt.bak
+ create mode 100644 test.py
+ create mode 100644 test.py.bak
+ create mode 100644 test2.py
+ create mode 100644 test2.py.bak
+ create mode 100644 xyz.py
+ create mode 100644 xyz.py.bak
+
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (master)
+$
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (master)
+$ git branch -M main
+
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (main)
+$ git remote add origin https://github.com/mohangavvala/Python_sessions_2.git
+
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (main)
+$  main
+bash: main: command not found
+
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (main)
+$ git push -u origin main
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (24/24), 61.51 KiB | 3.08 MiB/s, done.
+Total 24 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/mohangavvala/Python_sessions_2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+jagan@DESKTOP-VDCL0DV MINGW64 /f/Python_sessin_2_git/python_session2_material (main)
+$
+
+
+$ git clone https://github.com/mohangavvala/Python_sessions_2.gitCloning into 'Python_sessions_2'...
+remote: Enumerating objects: 24, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 24 (delta 4), reused 24 (delta 4), pack-reused 0
+Receiving objects: 100% (24/24), 61.51 KiB | 1.98 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+

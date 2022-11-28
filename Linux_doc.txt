@@ -1,0 +1,1200 @@
+LINUX/UNIX:
+----------
+LINUX/UNIX is an operating system by using OS users or applications can communicate with 
+hardware componets
+Features of LINUX OS:
+----------------------
+1>Linux is FOSS ("Freeware and Open source Software")
+2>Linux is multi user OS
+3>It is user friendly .It provides both CUI (charcter user interface) and GUI (Graphical User Interface)
+
+Flavors of LINUX:
+-----------------
+
+Falvors are
+1.Ubuntu
+2.Red hat Linux
+3.Centos
+4.Fedora
+5.Slackware
+6.mint
+7.kali
+8.opensuse
+
+components of UNIX OS:
+---------------------
+1.shell
+2.Kernal
+
+1.shell:
+--------
+1>It is outer layer of LINUX os
+2>It reads our command(user enetrd commands)and verfies either command coresponds to command
+related application or not  and shell tranfer the command into kernal understable format
+
+eg:
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABC_2022.04.26-07.57.59  dir2  Documents  f2.txt  f5.txt  Music     Templates  xyz_06_01_2022.log
+ABC_2022.04.26-07.56.47  abc.txt                  dir3  Downloads  f3.txt  JAVA2   Pictures  Videos     XYZ_123
+ABC_2022.04.26-07.57.38  Desktop                  dir4  f1.txt     f4.txt  MOHAN   Public    xyz_       xyz_.log
+jagang@jagang-VirtualBox:~$ which ls
+/usr/bin/ls
+jagang@jagang-VirtualBox:~$ abcd
+
+Command 'abcd' not found, did you mean:
+
+  command 'bcd' from deb bsdgames (2.17-28build1)
+  command 'ascd' from deb ascd (0.13.2-6)
+  command 'lbcd' from deb lbcd (3.5.2-3)
+  command 'abcde' from deb abcde (2.9.3-1)
+
+Try: sudo apt install <deb name>
+
+eg:
+jagang@jagang-VirtualBox:~$ touch abcd.txt
+jagang@jagang-VirtualBox:~$ which touch
+/usr/bin/touch
+jagang@jagang-Vi
+
+2.Kernal:
+-----------
+It is core component of LINUX os
+It is responsible to exigute our commands
+It is responsible to interact with hardware componets 
+
+Note:
+	shell and kernal togerther considerd as operating system.
+
+
+Note:
+In linux two types users are there 1.Normal user 2. Super user(admin/root user)
+$ prompt for Normal user
+# prompt for super user
+
+
+eg:
+agang@jagang-VirtualBox:~$ whoami
+jagang
+jagang@jagang-VirtualBox:~$ sudo -i
+[sudo] password for jagang: 
+root@jagang-VirtualBox:~# 
+root@jagang-VirtualBox:~# 
+root@jagang-VirtualBox:~# 
+root@jagang-VirtualBox:~# whoami
+root
+root@jagang-VirtualBox:~# exit
+logout
+jagang@jagang-VirtualBox:~$ 
+jagang@jagang-VirtualBox:~$ 
+
+To open terminal  ctr + alt + t
+To close terminal  ctr + d
+
+Basic commands:
+--------------
+Some basic commands we regularly used 
+
+1.pwd:
+----- 
+ present working directory 
+ 
+ eg:
+ jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+
+
+2.ls:
+-----
+list all files and directories in pwd
+eg:
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABC_2022.04.26-07.57.59  Desktop  dir4       f1.txt  f4.txt  MOHAN     Public     xyz_                XYZ_123
+ABC_2022.04.26-07.56.47  abcd.txt                 dir2     Documents  f2.txt  f5.txt  Music     Templates  xyz_06_01_2022.log  xyz_.log
+ABC_2022.04.26-07.57.38  abc.txt                  dir3     Downloads  f3.txt  JAVA2   Pictures  Videos     xyz123
+
+
+3.mkdir:
+----------
+To create a new directory (folder)
+
+eg:
+jagang@jagang-VirtualBox:~$ mkdir  ATP
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABC_2022.04.26-07.57.59  ATP      dir3       Downloads  f3.txt  JAVA2  Pictures   Videos              xyz123
+ABC_2022.04.26-07.56.47  abcd.txt                 Desktop  dir4       f1.txt     f4.txt  MOHAN  Public     xyz_                XYZ_123
+ABC_2022.04.26-07.57.38  abc.txt                  dir2     Documents  f2.txt     f5.txt  Music  Templates  xyz_06_01_2022.log  xyz_.log
+jagang@jagang-VirtualBox:~$ 
+
+4.cd :
+------
+Change directory
+
+
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABC_2022.04.26-07.57.59  ATP      dir3       Downloads  f3.txt  JAVA2  Pictures   Videos              xyz123
+ABC_2022.04.26-07.56.47  abcd.txt                 Desktop  dir4       f1.txt     f4.txt  MOHAN  Public     xyz_                XYZ_123
+ABC_2022.04.26-07.57.38  abc.txt                  dir2     Documents  f2.txt     f5.txt  Music  Templates  xyz_06_01_2022.log  xyz_.log
+jagang@jagang-VirtualBox:~$ cd Documents
+jagang@jagang-VirtualBox:~/Documents$ pwd
+/home/jagang/Documents
+
+
+5.touch:
+--------
+To create any empty file
+eg:
+agang@jagang-VirtualBox:~/Documents$ ls
+jagang@jagang-VirtualBox:~/Documents$ touch  test.py
+jagang@jagang-VirtualBox:~/Documents$ ls
+test.py
+jagang@jagang-VirtualBox:~/Documents$ touch abc.txt
+jagang@jagang-VirtualBox:~/Documents$ ls
+abc.txt  test.py
+jagang@jagang-VirtualBox:~/Documents$ 
+
+
+6.rm:
+------
+To remove file 
+eg:
+agang@jagang-VirtualBox:~/Documents$ ls
+jagang@jagang-VirtualBox:~/Documents$ touch  test.py
+jagang@jagang-VirtualBox:~/Documents$ ls
+test.py
+jagang@jagang-VirtualBox:~/Documents$ touch abc.txt
+jagang@jagang-VirtualBox:~/Documents$ ls
+abc.txt  test.py
+jagang@jagang-VirtualBox:~/Documents$ 
+
+7.rmdir:
+-------
+To remove directory
+
+eg:
+agang@jagang-VirtualBox:~/Documents$ ls
+jagang@jagang-VirtualBox:~/Documents$ touch  test.py
+jagang@jagang-VirtualBox:~/Documents$ ls
+test.py
+jagang@jagang-VirtualBox:~/Documents$ touch abc.txt
+jagang@jagang-VirtualBox:~/Documents$ ls
+abc.txt  test.py
+jagang@jagang-VirtualBox:~/Documents$ 
+
+8.date:
+--------
+To display current system date and time 
+
+eg:
+jagang@jagang-VirtualBox:~$ date
+Thursday 23 June 2022 07:45:31 AM IST
+
+9.cal :
+-------
+To display current month calender
+
+eg:
+jagang@jagang-VirtualBox:~$ cal
+     June 2022        
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30  
+
+To display specific moth and year
+
+eg:
+jagang@jagang-VirtualBox:~$ cal 9 2018
+   September 2018     
+Su Mo Tu We Th Fr Sa  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+30                    
+
+
+eg:
+jagang@jagang-VirtualBox:~$ cal 2022
+                            2022
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5         1  2  3  4  5  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   6  7  8  9 10 11 12  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  13 14 15 16 17 18 19  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  20 21 22 23 24 25 26  
+23 24 25 26 27 28 29  27 28                 27 28 29 30 31        
+30 31                                                             
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2   1  2  3  4  5  6  7            1  2  3  4  
+ 3  4  5  6  7  8  9   8  9 10 11 12 13 14   5  6  7  8  9 10 11  
+10 11 12 13 14 15 16  15 16 17 18 19 20 21  12 13 14 15 16 17 18  
+17 18 19 20 21 22 23  22 23 24 25 26 27 28  19 20 21 22 23 24 25  
+24 25 26 27 28 29 30  29 30 31              26 27 28 29 30        
+                                                                  
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2      1  2  3  4  5  6               1  2  3  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   4  5  6  7  8  9 10  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  11 12 13 14 15 16 17  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  18 19 20 21 22 23 24  
+24 25 26 27 28 29 30  28 29 30 31           25 26 27 28 29 30     
+31                                                                
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5               1  2  3  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   4  5  6  7  8  9 10  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  11 12 13 14 15 16 17  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  18 19 20 21 22 23 24  
+23 24 25 26 27 28 29  27 28 29 30           25 26 27 28 29 30 31  
+30 31                                                 
+
+eg:
+jagang@jagang-VirtualBox:~$ cal 1
+                             1
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5         1  2  3  4  5  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   6  7  8  9 10 11 12  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  13 14 15 16 17 18 19  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  20 21 22 23 24 25 26  
+23 24 25 26 27 28 29  27 28                 27 28 29 30 31        
+30 31                                                             
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2   1  2  3  4  5  6  7            1  2  3  4  
+ 3  4  5  6  7  8  9   8  9 10 11 12 13 14   5  6  7  8  9 10 11  
+10 11 12 13 14 15 16  15 16 17 18 19 20 21  12 13 14 15 16 17 18  
+17 18 19 20 21 22 23  22 23 24 25 26 27 28  19 20 21 22 23 24 25  
+24 25 26 27 28 29 30  29 30 31              26 27 28 29 30        
+                                                                  
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2      1  2  3  4  5  6               1  2  3  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   4  5  6  7  8  9 10  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  11 12 13 14 15 16 17  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  18 19 20 21 22 23 24  
+24 25 26 27 28 29 30  28 29 30 31           25 26 27 28 29 30     
+31                                                                
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5               1  2  3  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   4  5  6  7  8  9 10  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  11 12 13 14 15 16 17  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  18 19 20 21 22 23 24  
+23 24 25 26 27 28 29  27 28 29 30           25 26 27 28 29 30 31  
+30 31                          
+
+eg:
+jagang@jagang-VirtualBox:~$ cal 9999
+                            9999
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2      1  2  3  4  5  6      1  2  3  4  5  6  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   7  8  9 10 11 12 13  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  14 15 16 17 18 19 20  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  21 22 23 24 25 26 27  
+24 25 26 27 28 29 30  28                    28 29 30 31           
+31                                                                
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+             1  2  3                     1         1  2  3  4  5  
+ 4  5  6  7  8  9 10   2  3  4  5  6  7  8   6  7  8  9 10 11 12  
+11 12 13 14 15 16 17   9 10 11 12 13 14 15  13 14 15 16 17 18 19  
+18 19 20 21 22 23 24  16 17 18 19 20 21 22  20 21 22 23 24 25 26  
+25 26 27 28 29 30     23 24 25 26 27 28 29  27 28 29 30           
+                      30 31                                       
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+             1  2  3   1  2  3  4  5  6  7            1  2  3  4  
+ 4  5  6  7  8  9 10   8  9 10 11 12 13 14   5  6  7  8  9 10 11  
+11 12 13 14 15 16 17  15 16 17 18 19 20 21  12 13 14 15 16 17 18  
+18 19 20 21 22 23 24  22 23 24 25 26 27 28  19 20 21 22 23 24 25  
+25 26 27 28 29 30 31  29 30 31              26 27 28 29 30        
+                                                                  
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2      1  2  3  4  5  6            1  2  3  4  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   5  6  7  8  9 10 11  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  12 13 14 15 16 17 18  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  19 20 21 22 23 24 25  
+24 25 26 27 28 29 30  28 29 30              26 27 28 29 30 31     
+31                                
+
+eg:
+jagang@jagang-VirtualBox:~$ cal 10000
+cal: year `10000' not in range 1..9999
+
+
+11.hello:
+---------
+To display  about system information
+
+eg:
+[jagan@www.masswerk.at:2]$ hello                                                
+ JS/UIX 0.49 @ www.masswerk.at at 7:52:28 local time                            
+ by mass:werk - media environments <http://www.masswerk.at>                     
+ Type "help" for available commands.
+ 
+ 12.clear:
+ -----------
+ To clear the terminal (ctl+L)
+ eg:
+ jagang@jagang-VirtualBox:~$ clear
+
+13.exit:
+--------
+To logout from curent session 
+
+$exit 
+
+
+Types of files in linux:
+-------------------------
+We know everything in python treated as Object
+
+similarly in Linux every thing treated as file
+
+There are three types of files in Linux
+
+1.Normal or ordinary file
+2.Directory file
+3.Device file
+
+
+1.Normal or ordinary file:
+---------------------------
+These files contains only data it can be either test file (like abc.txt) or binary files
+(like audio,images,video files)
+
+2.Directory file:
+-----------------
+These files represents directories
+In windows we can use folder terminalogy .Where in linux we can use directory terminalogy
+Directory contains files and sub directories
+
+3.Device file:
+-------------
+Every device treated as file only .By using these files we can communicate with that device.
+
+Eg:
+	Terminal also one device in linux OS so terminal also a file
+
+
+1st terminal:
+jagang@jagang-VirtualBox:~$ tty
+/dev/pts/0                     --------------->0 represents first terminal file
+jagang@jagang-VirtualBox:~$ ^C
+
+2nd terminal:
+jagang@jagang-VirtualBox:~$ tty
+/dev/pts/1                        --------------->1 represents 2nd terminal file
+
+
+
+
+eg:
+terminal 1:
+jagang@jagang-VirtualBox:~$ cat >/dev/pts/1
+Hello
+How are you
+i am fine 
+
+
+terminal 2:
+jagang@jagang-VirtualBox:~$ Hello
+How are you
+i am fine 
+
+How to check file type:
+------------------------
+We have to use  ls command with -l option which give the total information abou the files.
+eg:
+
+agang@jagang-VirtualBox:~$ ls -l
+total 76
+-rw-rw-r-- 1 jagang jagang    0 Apr 26 08:19 abc_123.txt
+-rw-rw-r-- 1 jagang jagang    0 Apr 26 07:56 ABC_2022.04.26-07.56.47
+-rw-rw-r-- 1 jagang jagang    0 Apr 26 07:57 ABC_2022.04.26-07.57.38
+-rw-rw-r-- 1 jagang jagang    0 Apr 26 07:57 ABC_2022.04.26-07.57.59
+-rw-rw-r-- 1 jagang jagang    0 Jun 22 07:54 abcd.txt
+-rw-rw-r-- 1 jagang jagang    0 Apr 18 18:35 abc.txt
+drwxr-xr-x 3 jagang jagang 4096 Apr 27 08:15 Desktop
+drwxrwxr-x 2 jagang jagang 4096 Apr 26 08:06 dir2
+drwxrwxr-x 2 jagang jagang 4096 Apr 26 08:06 dir3
+drwxrwxr-x 3 jagang jagang 4096 Apr 26 08:08 dir4
+drwxr-xr-x 2 jagang jagang 4096 Jun 23 07:41 Documents
+drwxr-xr-x 2 jagang jagang 4096 Apr  8 11:08 Downloads
+-rw-rw-r-- 1 jagang jagang   15 Apr 26 08:21 f1.txt
+-rw-rw-r-- 1 jagang jagang   49 Apr 27 07:31 f2.txt
+-rw-rw-r-- 1 jagang jagang   13 Apr 27 07:36 f3.txt
+-rw-rw-r-- 1 jagang jagang   13 Apr 27 07:39 f4.txt
+-rw-rw-r-- 1 jagang jagang  302 Apr 27 07:54 f5.txt
+lrwxrwxrwx 1 jagang jagang    4 Apr 28 07:37 JAVA2 -> JAVA
+drwxrwxr-x 2 jagang jagang 4096 Apr 23 08:01 MOHAN
+drwxr-xr-x 2 jagang jagang 4096 Apr  8 11:08 Music
+drwxr-xr-x 2 jagang jagang 4096 Apr  8 11:08 Pictures
+drwxr-xr-x 2 jagang jagang 4096 Apr  8 11:08 Public
+drwxr-xr-x 2 jagang jagang 4096 Apr  8 11:08 Templates
+drwxr-xr-x 2 jagang jagang 4096 Apr  8 11:08 Videos
+-rw-rw-r-- 1 jagang jagang    0 Apr 26 07:54 xyz_
+-rw-rw-r-- 1 jagang jagang    0 Apr 26 07:52 xyz_06_01_2022.log
+drwxrwxr-x 2 jagang jagang 4096 Jun 22 08:02 xyz123
+drwxrwxr-x 2 jagang jagang 4096 Apr 22 08:11 XYZ_123
+-rw-rw-r-- 1 jagang jagang    0 Apr 26 07:54 xyz_.log
+
+
+The first charcter represents the type of file 
+
+d -----------> it is directory file
+- ------------>it is  normal file
+l -------------> it is link file
+c --------------> it is charcter file
+b --------------->it is blank file
+s --------------->it is socket file
+
+
+File system Navigation commands:
+---------------------------------
+In LINUX file system follow tree structure
+
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+
+
+/ ------> root
+
+to move from one directory to another directory by using Navigation commands
+
+ls ------------->It is gives list of all files and directories in pwd except hidden files
+
+ls -a ---------->It is gives list of all files and directories in pwd include hidden files also
+
+
+eg:
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABC_2022.04.26-07.57.59  Desktop  dir4       f1.txt  f4.txt  MOHAN     Public     xyz_                XYZ_123
+ABC_2022.04.26-07.56.47  abcd.txt                 dir2     Documents  f2.txt  f5.txt  Music     Templates  xyz_06_01_2022.log  xyz_.log
+ABC_2022.04.26-07.57.38  abc.txt                  dir3     Downloads  f3.txt  JAVA2   Pictures  Videos     xyz123
+jagang@jagang-VirtualBox:~$ ls -a
+.                        abcd.txt       .config    f1.txt   JAVA2     Public                       .vboxclient-seamless.pid
+..                       .abc.txt       Desktop    .f2.txt  .local    .ssh                         Videos
+.ABC123                  abc.txt        dir2       f2.txt   MOHAN     .sudo_as_admin_successful    xyz_
+abc_123.txt              .bash_history  dir3       f3.txt   .mozilla  Templates                    xyz_06_01_2022.log
+ABC_2022.04.26-07.56.47  .bash_logout   dir4       f4.txt   Music     .vboxclient-clipboard.pid    xyz123
+ABC_2022.04.26-07.57.38  .bashrc        Documents  f5.txt   Pictures  .vboxclient-display.pid      XYZ_123
+ABC_2022.04.26-07.57.59  .cache         Downloads  .gnupg   .profile  .vboxclient-draganddrop.pid  xyz_.log
+
+
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ mkdir gavvala
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABC_2022.04.26-07.57.59  Desktop  dir4       f1.txt  f4.txt   JAVA2  Pictures   Videos              xyz123
+ABC_2022.04.26-07.56.47  abcd.txt                 dir2     Documents  f2.txt  f5.txt   MOHAN  Public     xyz_                XYZ_123
+ABC_2022.04.26-07.57.38  abc.txt                  dir3     Downloads  f3.txt  gavvala  Music  Templates  xyz_06_01_2022.log  xyz_.log
+jagang@jagang-VirtualBox:~$ cd  gavvala
+jagang@jagang-VirtualBox:~/gavvala$ pwd
+/home/jagang/gavvala
+jagang@jagang-VirtualBox:~/gavvala$ touch  abc.txt
+jagang@jagang-VirtualBox:~/gavvala$ ls
+abc.txt
+jagang@jagang-VirtualBox:~/gavvala$ ls -a
+.  ..  abc.txt
+
+
+1> Every directory in Linux two hidden files are there 
+Those are .  and ..
+
+.  -------->It represents PWD
+.. -------->It represents Parent directory
+
+eg:
+/home/jagang ---------->pwd
+/home         --------->parent directory
+
+
+eg:
+/home   ------------>pwd
+/ ----------------> parent directory
+
+
+eg:
+jagang@jagang-VirtualBox:~/gavvala$ pwd
+/home/jagang/gavvala
+jagang@jagang-VirtualBox:~/gavvala$ cd .
+jagang@jagang-VirtualBox:~/gavvala$ pwd
+/home/jagang/gavvala
+jagang@jagang-VirtualBox:~/gavvala$ cd ..
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ cd ..
+jagang@jagang-VirtualBox:/home$ pwd
+/home
+jagang@jagang-VirtualBox:/home$ cd ..
+jagang@jagang-VirtualBox:/$ pwd
+/
+jagang@jagang-VirtualBox:/$ cd ..
+jagang@jagang-VirtualBox:/$ pwd
+/
+
+2.cd .:
+---------
+cd. means change to cureent directory
+
+3. cd ..:
+----------
+cd .. means it changes to parent directory
+
+4.cd:
+-----
+cd without any argument it changes to to user home directory
+
+eg:
+jagang@jagang-VirtualBox:/$ pwd
+/
+jagang@jagang-VirtualBox:/$ cd 
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABC_2022.04.26-07.57.59  Desktop  dir4       f1.txt  f4.txt   JAVA2  Pictures   Videos              xyz123
+ABC_2022.04.26-07.56.47  abcd.txt                 dir2     Documents  f2.txt  f5.txt   MOHAN  Public     xyz_                XYZ_123
+ABC_2022.04.26-07.57.38  abc.txt                  dir3     Downloads  f3.txt  gavvala  Music  Templates  xyz_06_01_2022.log  xyz_.log
+jagang@jagang-VirtualBox:~$ cd gavvala
+jagang@jagang-VirtualBox:~/gavvala$ pwd
+/home/jagang/gavvala
+jagang@jagang-VirtualBox:~/gavvala$ mkdir ATP
+jagang@jagang-VirtualBox:~/gavvala$ cd ATP
+jagang@jagang-VirtualBox:~/gavvala/ATP$ pwd
+/home/jagang/gavvala/ATP
+jagang@jagang-VirtualBox:~/gavvala/ATP$ cd 
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+
+5. cd ~:
+---------
+~ means user home directory
+
+cd ~ it changes to user home directory
+
+eg:
+jagang@jagang-VirtualBox:~/gavvala/ATP$ pwd
+/home/jagang/gavvala/ATP
+jagang@jagang-VirtualBox:~/gavvala/ATP$ cd ~
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+
+6.cd -:
+--------
+cd - means it changes to previous working directory
+
+
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ ^C
+jagang@jagang-VirtualBox:~$ cd -
+/home/jagang/gavvala/ATP
+jagang@jagang-VirtualBox:~/gavvala/ATP$ cd -
+/home/jagang
+
+
+
+Linux file system:
+------------------
+Linux file system has tree structure.It starts with root (/) directory
+This root (/) directory contains sevaral sub directories   like bin,sbin,lib,home...e.t.c
+eg:
+jagang@jagang-VirtualBox:/$ pwd
+/
+jagang@jagang-VirtualBox:/$ ls
+bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  swapfile  tmp  var
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   sys       usr  VBox.log
+
+1.bin:
+------
+Bin means binary this directory contains all binary executables related to our linux 
+commands
+eg:
+jagang@jagang-VirtualBox:/$ which ls
+/usr/bin/ls
+jagang@jagang-VirtualBox:/$ which cal 
+/usr/bin/cal
+jagang@jagang-Vir
+
+2.sbin:
+--------
+sbin means system bin or secondary bin.It contains all binary executables of admin level 
+commands.
+eg:
+Disk partition
+Network mangement e.t.c 
+
+3.etc:
+-------
+This directory contains all system configuration files
+This configuration can be used to customize behaviour of LINUX os
+
+eg:
+jagang@jagang-VirtualBox:/$ ls
+bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  swapfile  tmp  var
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   sys       usr  VBox.log
+jagang@jagang-VirtualBox:/$ cd etc
+jagang@jagang-VirtualBox:/etc$ ls
+acpi                           dconf                host.conf        machine-id               ppp                subgid-
+adduser.conf                   debconf.conf         hostid           magic                    printcap           subuid
+alsa                           debian_version       hostname         magic.mime               profile            subuid-
+alternatives                   default              hosts            mailcap                  profile.d          sudoers
+anacrontab                     deluser.conf         hosts.allow      mailcap.order            protocols          sudoers.d
+apg.conf                       depmod.d             hosts.deny       manpath.config           pulse              sysctl.conf
+apm                            dhcp                 hp               mime.types               python3            sysctl.d
+apparmor                       dictionaries-common  ifplugd          mke2fs.conf              python3.8          systemd
+apparmor.d                     dpkg                 init             modprobe.d               rc0.d              terminfo
+apport                         e2scrub.conf         init.d           modules                  rc1.d              thermald
+appstream.conf                 emacs                initramfs-tools  modules-load.d           rc2.d              timezone
+apt                            environment          inputrc          mtab                     rc3.d              tmpfiles.d
+avahi                          environment.d        insserv.conf.d   mtools.conf              rc4.d              ubuntu-advantage
+bash.bashrc                    ethertypes           iproute2         mysql                    rc5.d              ucf.conf
+bash_completion                firefox              issue            nanorc                   rc6.d              udev
+bash_completion.d              fonts                issue.net        netplan                  rcS.d              udisks2
+bindresvport.blacklist         fprintd.conf         kernel           network                  resolv.conf        ufw
+binfmt.d                       fstab                kernel-img.conf  networkd-dispatcher      rmt                update-manager
+bluetooth                      fuse.conf            kerneloops.conf  NetworkManager           rpc                update-motd.d
+brlapi.key                     fwupd                ldap             networks                 rsyslog.conf       update-notifier
+brltty                         gai.conf             ld.so.cache      newt                     rsyslog.d          UPower
+brltty.conf                    gamemode.ini         ld.so.conf       nsswitch.conf            rygel.conf         usb_modeswitch.conf
+ca-certificates                gdb                  ld.so.conf.d     openvpn                  sane.d             usb_modeswitch.d
+ca-certificates.conf           gdm3                 legal            opt                      security           vim
+ca-certificates.conf.dpkg-old  geoclue              libao.conf       os-release               selinux            vmware-tools
+calendar                       ghostscript          libaudit.conf    PackageKit               sensors3.conf      vtrgb
+chatscripts                    glvnd                libblockdev      pam.conf                 sensors.d          vulkan
+console-setup                  gnome                libnl-3          pam.d                    services           wgetrc
+cracklib                       groff                libpaper.d       papersize                sgml               wpa_supplicant
+cron.d                         group                locale.alias     passwd                   shadow             X11
+cron.daily                     group-               locale.gen       passwd-                  shadow-            xattr.conf
+cron.hourly                    grub.d               localtime        pcmcia                   shells             xdg
+cron.monthly                   gshadow              logcheck         perl                     skel               xml
+crontab                        gshadow-             login.defs       pki                      snmp               zsh_command_not_found
+cron.weekly                    gss                  logrotate.conf   pm                       speech-dispatcher
+cups                           gtk-2.0              logrotate.d      pnm2ppa.conf             ssh
+cupshelpers                    gtk-3.0              lsb-release      polkit-1                 ssl
+dbus-1                         hdparm.conf          ltrace.conf      popularity-contest.conf  subgid
+
+4.tmp:
+-----
+tmp means temporry it contains all temporry files created in curent session.
+If file is required only for cureent session then that file created inside tmp directory
+eg:
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ cd ..
+jagang@jagang-VirtualBox:/home$ 
+jagang@jagang-VirtualBox:/home$ pwd
+/home
+jagang@jagang-VirtualBox:/home$ cd ..
+jagang@jagang-VirtualBox:/$ pwd
+/
+jagang@jagang-VirtualBox:/$ ls
+bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  swapfile  tmp  var
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   sys       usr  VBox.log
+jagang@jagang-VirtualBox:/$ cd tmp
+jagang@jagang-VirtualBox:/tmp$ ls
+config-err-qyXyLh
+ssh-QEe9sFcmi0td
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-colord.service-aC0Uhh
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-ModemManager.service-gxXyQh
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-switcheroo-control.service-m8oHEh
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-systemd-logind.service-G6aSCh
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-systemd-resolved.service-sYf6Re
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-systemd-timesyncd.service-A4qiSf
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-upower.service-lrI2bg
+tracker-extract-files.1000
+tracker-extract-files.125
+VMwareDnD
+jagang@jagang-VirtualBox:/tmp$ touch xyz.txt
+jagang@jagang-VirtualBox:/tmp$ touch abc.py
+jagang@jagang-VirtualBox:/tmp$ ls
+abc.py
+config-err-qyXyLh
+ssh-QEe9sFcmi0td
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-colord.service-aC0Uhh
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-ModemManager.service-gxXyQh
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-switcheroo-control.service-m8oHEh
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-systemd-logind.service-G6aSCh
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-systemd-resolved.service-sYf6Re
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-systemd-timesyncd.service-A4qiSf
+systemd-private-f1ced1f5b5ef410da35af2250e86475a-upower.service-lrI2bg
+tracker-extract-files.1000
+tracker-extract-files.125
+VMwareDnD
+xyz.txt
+jagang@jagang-VirtualBox:/tmp$ 
+
+before shutdown xyz.txt and abc.py are in tmp directory
+
+once system is shutdown all files related to cureent session are deleted 
+
+eg:
+jagang@jagang-VirtualBox:/tmp$ ls
+config-err-RpCKoB
+ssh-h28Q52sa51WE
+systemd-private-0f6b88453956410f9e4716b885dac94f-colord.service-Hnvouh
+systemd-private-0f6b88453956410f9e4716b885dac94f-ModemManager.service-4J96bh
+systemd-private-0f6b88453956410f9e4716b885dac94f-switcheroo-control.service-WSUkDi
+systemd-private-0f6b88453956410f9e4716b885dac94f-systemd-logind.service-zMLV1g
+systemd-private-0f6b88453956410f9e4716b885dac94f-systemd-resolved.service-aK8rJg
+systemd-private-0f6b88453956410f9e4716b885dac94f-systemd-timesyncd.service-BueKeg
+systemd-private-0f6b88453956410f9e4716b885dac94f-upower.service-rhSqGi
+tracker-extract-files.1000
+tracker-extract-files.125
+VMwareDnD
+
+5.dev :
+-------
+dev means device
+In linux everything treated as file  including devices also treated as file.By using these
+files we can communicate with devices.
+All the device files stored in dev folder.
+eg:
+jagang@jagang-VirtualBox:/$ cd dev
+jagang@jagang-VirtualBox:/dev$ ls
+autofs           ecryptfs   loop0   loop9         rfkill    stdout  tty20  tty34  tty48  tty61      ttyS16  ttyS3      vboxuser  vcsu
+block            fb0        loop1   loop-control  rtc       tty     tty21  tty35  tty49  tty62      ttyS17  ttyS30     vcs       vcsu1
+bsg              fd         loop10  mapper        rtc0      tty0    tty22  tty36  tty5   tty63      ttyS18  ttyS31     vcs1      vcsu2
+btrfs-control    full       loop11  mcelog        sda       tty1    tty23  tty37  tty50  tty7       ttyS19  ttyS4      vcs2      vcsu3
+bus              fuse       loop12  mem           sda1      tty10   tty24  tty38  tty51  tty8       ttyS2   ttyS5      vcs3      vcsu4
+cdrom            hidraw0    loop13  mqueue        sda2      tty11   tty25  tty39  tty52  tty9       ttyS20  ttyS6      vcs4      vcsu5
+char             hpet       loop14  net           sda5      tty12   tty26  tty4   tty53  ttyprintk  ttyS21  ttyS7      vcs5      vcsu6
+console          hugepages  loop15  null          sg0       tty13   tty27  tty40  tty54  ttyS0      ttyS22  ttyS8      vcs6      vfio
+core             hwrng      loop2   nvram         sg1       tty14   tty28  tty41  tty55  ttyS1      ttyS23  ttyS9      vcsa      vga_arbiter
+cpu_dma_latency  i2c-0      loop3   port          shm       tty15   tty29  tty42  tty56  ttyS10     ttyS24  udmabuf    vcsa1     vhci
+cuse             initctl    loop4   ppp           snapshot  tty16   tty3   tty43  tty57  ttyS11     ttyS25  uhid       vcsa2     vhost-net
+disk             input      loop5   psaux         snd       tty17   tty30  tty44  tty58  ttyS12     ttyS26  uinput     vcsa3     vhost-vsock
+dma_heap         kmsg       loop6   ptmx          sr0       tty18   tty31  tty45  tty59  ttyS13     ttyS27  urandom    vcsa4     zero
+dri              lightnvm   loop7   pts           stderr    tty19   tty32  tty46  tty6   ttyS14     ttyS28  userio     vcsa5     zfs
+dvd              log        loop8   random        stdin     tty2    tty33  tty47  tty60  ttyS15     ttyS29  vboxguest  vcsa6
+jagang@jagang-VirtualBox:/dev$ 
+
+eg:
+tty -----------------> terminal related file
+fd --------------------->flopy disk related file
+hd ---------------------->hard disk related file
+stdin -------------------->standard input device related files
+stdout --------------------->standard output device related files
+stderr -------------------->standard error related files
+
+
+
+6.mnt:
+---------
+
+mnt means mounting
+mounting means the files in external devices are like pendrive,cd ...e.t.c  
+attached to linux file system.Then only we can use external files.This attchment process is
+known as mounting.
+
+There are two types of mounting process are there
+
+1.manual mounting
+2.automatic mounting
+
+In old versions of Linux os we can perform mounting process manually.
+In manual mounting process all the files added to mnt directory
+
+
+In new versions of Linux os  mounting process automatically done.In automatic mounting process
+the files in external devices stored media directory
+eg:
+jagang@jagang-VirtualBox:/$ cd mnt
+jagang@jagang-VirtualBox:/mnt$ ls
+jagang@jagang-VirtualBox:/mnt$ 
+
+7.media:
+---------
+The files of automatic mounting will be placed inside media directory
+
+eg:
+jagang@jagang-VirtualBox:/media$ ls
+jagang
+
+
+8.opt:
+------
+
+opt means optional
+some softwares which are default comes with Linux OS example FireFox
+
+If install third party softwares that third software files stored in opt directory
+
+eg:
+jagang@jagang-VirtualBox:/media$ ls
+jagang
+
+
+9.lib:
+---------
+lib means library
+The lib conatins all libray files required to our commands and applications
+eg:
+jagang@jagang-VirtualBox:/$ cd lib
+jagang@jagang-VirtualBox:/lib$ ls
+accountsservice        firefox                     ispell                                nvidia                software-properties
+apg                    firefox-addons              kernel                                openssh               speech-dispatcher-modules
+apparmor               firmware                    klibc                                 open-vm-tools         ssl
+apt                    gcc                         klibc-abS-oVB3xeRN8SFypUWbQvR33nc.so  os-prober             sudo
+aspell                 gdm3                        language-selector                     os-probes             sysctl.d
+binfmt.d               ghostscript                 libgjs.so.0                           os-release            systemd
+bluetooth              girepository-1.0            libgjs.so.0.0.0                       packagekit            sysusers.d
+bolt                   gjs                         libmbim                               pcmciautils           tc
+brltty                 gnome-initial-setup         libqmi                                pkgconfig             terminfo
+cnf-update-db          gnome-session               linux                                 pkg-config.multiarch  tmpfiles.d
+command-not-found      gnome-settings-daemon-3.0   linux-boot-probes                     pm-utils              ubiquity
+console-setup          gnome-shell                 linux-sound-base                      policykit-1           ubuntu-release-upgrader
+cpp                    gnupg                       locale                                pppd                  udev
+crda                   gnupg2                      lsb                                   pulse-13.99.1         udisks2
+cups                   groff                       man-db                                python2.7             ufw
+dbus-1.0               grub                        memtest86+                            python3               unity-settings-daemon-1.0
+debug                  grub-legacy                 mime                                  python3.8             update-notifier
+dpkg                   gst-install-plugins-helper  modprobe.d                            python3.9             upower
+eject                  gvfs                        modules                               recovery-mode         valgrind
+emacsen-common         hdparm                      modules-load.d                        rsyslog               X11
+environment.d          ibus                        netplan                               rygel                 x86_64-linux-gnu
+evolution-data-server  init                        networkd-dispatcher                   sasl2                 xorg
+file                   initramfs-tools             NetworkManager 
+
+10.var:
+--------
+var means varable
+
+If any data which is keep on changing such type of data will be stored in var directory
+
+eg:
+log file 
+
+eg:
+jagang@jagang-VirtualBox:/var$ ls
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  snap  spool  tmp
+
+
+ls command:
+----------
+
+jagang@jagang-VirtualBox:~$ man ls
+
+
+date command:
+--------------
+
+agang@jagang-VirtualBox:~$ man date
+jagang@jagang-VirtualBox:~$ date
+Tuesday 28 June 2022 08:20:12 AM IST
+jagang@jagang-VirtualBox:~$ date +%D
+06/28/22
+jagang@jagang-VirtualBox:~$ date +%T
+08:21:02
+jagang@jagang-VirtualBox:~$ 
+
+
+agang@jagang-VirtualBox:~$ date +"Year: %Y, Month: %m, Day: %d"
+Year: 2022, Month: 06, Day: 28
+jagang@jagang-VirtualBox:~$ date +"Year: %Y"
+Year: 2022
+jagang@jagang-VirtualBox:~$ date +" %Y"
+ 2022
+
+
+cal:
+----
+agang@jagang-VirtualBox:~$ man cal
+jagang@jagang-VirtualBox:~$ cal 
+     June 2022        
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30        
+                      
+jagang@jagang-VirtualBox:~$ cal 2020
+                            2020
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+          1  2  3  4                     1   1  2  3  4  5  6  7  
+ 5  6  7  8  9 10 11   2  3  4  5  6  7  8   8  9 10 11 12 13 14  
+12 13 14 15 16 17 18   9 10 11 12 13 14 15  15 16 17 18 19 20 21  
+19 20 21 22 23 24 25  16 17 18 19 20 21 22  22 23 24 25 26 27 28  
+26 27 28 29 30 31     23 24 25 26 27 28 29  29 30 31              
+                                                                  
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+          1  2  3  4                  1  2      1  2  3  4  5  6  
+ 5  6  7  8  9 10 11   3  4  5  6  7  8  9   7  8  9 10 11 12 13  
+12 13 14 15 16 17 18  10 11 12 13 14 15 16  14 15 16 17 18 19 20  
+19 20 21 22 23 24 25  17 18 19 20 21 22 23  21 22 23 24 25 26 27  
+26 27 28 29 30        24 25 26 27 28 29 30  28 29 30              
+                      31                                          
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+          1  2  3  4                     1         1  2  3  4  5  
+ 5  6  7  8  9 10 11   2  3  4  5  6  7  8   6  7  8  9 10 11 12  
+12 13 14 15 16 17 18   9 10 11 12 13 14 15  13 14 15 16 17 18 19  
+19 20 21 22 23 24 25  16 17 18 19 20 21 22  20 21 22 23 24 25 26  
+26 27 28 29 30 31     23 24 25 26 27 28 29  27 28 29 30           
+                      30 31                                       
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+             1  2  3   1  2  3  4  5  6  7         1  2  3  4  5  
+ 4  5  6  7  8  9 10   8  9 10 11 12 13 14   6  7  8  9 10 11 12  
+11 12 13 14 15 16 17  15 16 17 18 19 20 21  13 14 15 16 17 18 19  
+18 19 20 21 22 23 24  22 23 24 25 26 27 28  20 21 22 23 24 25 26  
+25 26 27 28 29 30 31  29 30                 27 28 29 30 31        
+                                                                  
+jagang@jagang-VirtualBox:~$ cal 1
+                             1
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5         1  2  3  4  5  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   6  7  8  9 10 11 12  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  13 14 15 16 17 18 19  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  20 21 22 23 24 25 26  
+23 24 25 26 27 28 29  27 28                 27 28 29 30 31        
+30 31                                                             
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2   1  2  3  4  5  6  7            1  2  3  4  
+ 3  4  5  6  7  8  9   8  9 10 11 12 13 14   5  6  7  8  9 10 11  
+10 11 12 13 14 15 16  15 16 17 18 19 20 21  12 13 14 15 16 17 18  
+17 18 19 20 21 22 23  22 23 24 25 26 27 28  19 20 21 22 23 24 25  
+24 25 26 27 28 29 30  29 30 31              26 27 28 29 30        
+                                                                  
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                1  2      1  2  3  4  5  6               1  2  3  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   4  5  6  7  8  9 10  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  11 12 13 14 15 16 17  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  18 19 20 21 22 23 24  
+24 25 26 27 28 29 30  28 29 30 31           25 26 27 28 29 30     
+31                                                                
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5               1  2  3  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   4  5  6  7  8  9 10  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  11 12 13 14 15 16 17  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  18 19 20 21 22 23 24  
+23 24 25 26 27 28 29  27 28 29 30           25 26 27 28 29 30 31  
+30 31                                     
+
+
+working with directories:
+---------------------------
+mkdir diarA
+------------
+jagang@jagang-VirtualBox:~$ mkdir DirA
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              abcd.txt  dir3       Downloads  f4.txt   MOHAN     Templates           xyz123
+ABC_2022.04.26-07.56.47  abc.txt   dir4       f1.txt     f5.txt   Music     Videos              XYZ_123
+ABC_2022.04.26-07.57.38  Desktop   DirA       f2.txt     gavvala  Pictures  xyz_                xyz_.log
+ABC_2022.04.26-07.57.59  dir2      Documents  f3.txt     JAVA2    Public    xyz_06_01_2022.log
+
+mkdir dirB dirC dirD:
+----------------------
+
+agang@jagang-VirtualBox:~$ mkdir  dirB  dirC dirD
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              abcd.txt  dir3  dirC       f1.txt  f5.txt   Music      Videos              XYZ_123
+ABC_2022.04.26-07.56.47  abc.txt   dir4  dirD       f2.txt  gavvala  Pictures   xyz_                xyz_.log
+ABC_2022.04.26-07.57.38  Desktop   DirA  Documents  f3.txt  JAVA2    Public     xyz_06_01_2022.log
+ABC_2022.04.26-07.57.59  dir2      dirB  Downloads  f4.txt  MOHAN    Templates  xyz123
+jagang@jagang-VirtualBox:~$ 
+
+
+eg:
+agang@jagang-VirtualBox:~$ mkdir -p  dir10/dir11/dir12
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              abcd.txt  dir2  dirB       Downloads  f4.txt   MOHAN     Templates           xyz123
+ABC_2022.04.26-07.56.47  abc.txt   dir3  dirC       f1.txt     f5.txt   Music     Videos              XYZ_123
+ABC_2022.04.26-07.57.38  Desktop   dir4  dirD       f2.txt     gavvala  Pictures  xyz_                xyz_.log
+ABC_2022.04.26-07.57.59  dir10     DirA  Documents  f3.txt     JAVA2    Public    xyz_06_01_2022.log
+jagang@jagang-VirtualBox:~$ cd dir10
+jagang@jagang-VirtualBox:~/dir10$ ls
+dir11
+jagang@jagang-VirtualBox:~/dir10$ cd dir11
+jagang@jagang-VirtualBox:~/dir10/dir11$ ls
+dir12
+jagang@jagang-VirtualBox:~/dir10/dir11$ cd dir12
+jagang@jagang-VirtualBox:~/dir10/dir11/dir12$ ls
+jagang@jagang-VirtualBox:~/dir10/dir11/dir12$ 
+
+
+
+jagang@jagang-VirtualBox:~$ mkdir -p  {HYD,BANG,CHEN}/{2020,2021,2022}/{jan,feb,mar}/shedule_{1..3}.txt
+
+
+
+rmdir :
+-----
+
+to remove empty dir
+
+jagang@jagang-VirtualBox:~$ mkdir dir20
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              abcd.txt    dir10  dirB       Downloads  f4.txt   MOHAN     Templates           xyz123
+ABC_2022.04.26-07.56.47  abc.txt     dir20  dirC       f1.txt     f5.txt   Music     Videos              XYZ_123
+ABC_2022.04.26-07.57.38  city_names  dir4   dirD       f2.txt     gavvala  Pictures  xyz_                xyz_.log
+ABC_2022.04.26-07.57.59  Desktop     DirA   Documents  f3.txt     JAVA2    Public    xyz_06_01_2022.log
+jagang@jagang-VirtualBox:~$ cd dir20
+jagang@jagang-VirtualBox:~/dir20$ ls
+jagang@jagang-VirtualBox:~/dir20$ cd ..
+jagang@jagang-VirtualBox:~$ rmdir dir20
+jagang@jagang-VirtualBox:~$ mkdir dir30
+jagang@jagang-VirtualBox:~$ cd dir30
+jagang@jagang-VirtualBox:~/dir30$ touch abc.txt
+jagang@jagang-VirtualBox:~/dir30$ ls
+abc.txt
+jagang@jagang-VirtualBox:~/dir30$ cd ..
+jagang@jagang-VirtualBox:~$ rmdir dir30
+rmdir: failed to remove 'dir30': Directory not empty
+jagang@jagang-VirtualBox:~$ rm dir30
+rm: cannot remove 'dir30': Is a directory
+
+
+rm :
+--
+rm -r dirname:
+-------------------
+It delete all empty or non empty directories
+
+eg:
+jagang@jagang-VirtualBox:~$ rm -r city_names
+jagang@jagang-VirtualBox:~$ rm -r dir30
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABC_2022.04.26-07.57.59  Desktop  DirA  dirD       f1.txt  f4.txt   JAVA2  Pictures   Videos              xyz123
+ABC_2022.04.26-07.56.47  abcd.txt                 dir10    dirB  Documents  f2.txt  f5.txt   MOHAN  Public     xyz_                XYZ_123
+ABC_2022.04.26-07.57.38  abc.txt                  dir4     dirC  Downloads  f3.txt  gavvala  Music  Templates  xyz_06_01_2022.log  xyz_.log
+jagang@jagang-VirtualBox:~$ 
+
+eg:
+-----
+To remove group of non empty directories 
+rm -r dir11 dir12:
+----------------------
+jagang@jagang-VirtualBox:~$ mkdir dir10
+mkdir: cannot create directory ‘dir10’: File exists
+jagang@jagang-VirtualBox:~$ mkdir dir11
+jagang@jagang-VirtualBox:~$ cd dir11
+jagang@jagang-VirtualBox:~/dir11$ touch abc.txt
+jagang@jagang-VirtualBox:~/dir11$ cd..
+cd..: command not found
+jagang@jagang-VirtualBox:~/dir11$ cd ..
+jagang@jagang-VirtualBox:~$ mkdir dir12
+jagang@jagang-VirtualBox:~$ cd dir12
+jagang@jagang-VirtualBox:~/dir12$ touch xyz.txt
+jagang@jagang-VirtualBox:~/dir12$ cd ..
+jagang@jagang-VirtualBox:~$ rmdir  dir11 dir12
+rmdir: failed to remove 'dir11': Directory not empty
+rmdir: failed to remove 'dir12': Directory not empty
+jagang@jagang-VirtualBox:~$ rm -r dir11 dir12
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              ABC_2022.04.26-07.57.59  Desktop  DirA  dirD       f1.txt  f4.txt   JAVA2  Pictures   Videos              xyz123
+ABC_2022.04.26-07.56.47  abcd.txt                 dir10    dirB  Documents  f2.txt  f5.txt   MOHAN  Public     xyz_                XYZ_123
+ABC_2022.04.26-07.57.38  abc.txt                  dir4     dirC  Downloads  f3.txt  gavvala  Music  Templates  xyz_06_01_2022.log  xyz_.log
+jagang@jagang-VirtualBox:~$ 
+
+
+working with files:
+-------------------
+
+1.touch:
+----------
+
+jagang@jagang-VirtualBox:~$ pwd
+/home/jagang
+jagang@jagang-VirtualBox:~$ touch xyz_abc.py
+jagang@jagang-VirtualBox:~$ ls
+abc_123.txt              abcd.txt  dir4  dirD       f2.txt  gavvala  Pictures   xyz_                xyz_abc.py
+ABC_2022.04.26-07.56.47  abc.txt   DirA  Documents  f3.txt  JAVA2    Public     xyz_06_01_2022.log  xyz_.log
+ABC_2022.04.26-07.57.38  Desktop   dirB  Downloads  f4.txt  MOHAN    Templates  xyz123
+ABC_2022.04.26-07.57.59  dir10     dirC  f1.txt     f5.txt  Music    Videos     XYZ_123
+
+
+2.cat > filename:
+--------------------
+jagang@jagang-VirtualBox:~$ cat > file1.txt
+Hello
+world
+how
+are 
+youq
+q;
+^C
+
+
+to read data from the file
+
+jagang@jagang-VirtualBox:~$ cat file1.txt
+Hello
+world
+how
+are 
+youq
+q;
+
+
+eg:
+agang@jagang-VirtualBox:~$ cat file1.txt
+Hello
+world
+how
+are 
+youq
+q;
+jagang@jagang-VirtualBox:~$ cat < file1.txt
+Hello
+world
+how
+are 
+youq
+q;
+jagang@jagang-VirtualBox:~$ cat < file1.txt   >  file9.txt
+jagang@jagang-VirtualBox:~$ cat file1.txt
+Hello
+world
+how
+are 
+youq
+q;
+jagang@jagang-VirtualBox:~$ cat file9.txt
+Hello
+world
+how
+are 
+youq
+q;
